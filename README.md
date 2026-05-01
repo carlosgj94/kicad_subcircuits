@@ -58,51 +58,9 @@ This structure may change as the project becomes more concrete.
 
 ## Templates
 
-KiCad only detects templates from configured template directories. A template in
-this repository will not automatically appear in KiCad unless KiCad is pointed
-at the parent template directory.
-
-For this repository, the parent template directory is:
-
-```text
-templates/
-```
-
-In KiCad, set `KICAD_USER_TEMPLATE_DIR` to the absolute path of that directory
-using:
-
-```text
-Preferences -> Configure Paths...
-```
-
-For example:
-
-```text
-/home/juar/Projects/kicad/kicad_subcircuits/templates
-```
-
-The path should point to the folder containing template folders, not to an
-individual template folder.
-
-## Future Setup Script
-
-KiCad uses several different locations for templates, symbols, footprints,
-worksheets, plugins, and configuration. This repository should eventually hide
-that complexity behind a setup script.
-
-The script should probably:
-
-- Detect the installed KiCad version.
-- Locate the user's KiCad configuration directory.
-- Register or link templates from this repository.
-- Register custom symbol and footprint libraries.
-- Avoid overwriting existing user configuration without a backup.
-- Be repeatable, so it can be run after cloning this repository on a new
-  machine.
-
-For now, only template linking is automated.
-
-## Link Templates
+KiCad only detects templates from its template directories. Templates in this
+repository will not automatically appear in KiCad until they are linked into
+KiCad's user template directory.
 
 Run the template linker from the repository root:
 
@@ -133,6 +91,23 @@ Useful options:
 
 `--force` only replaces existing symlinks. It will not replace real files or
 directories.
+
+After linking, reopen the New Project dialog or restart KiCad.
+
+## Future Setup Script
+
+KiCad uses several different locations for templates, symbols, footprints,
+worksheets, plugins, and configuration. This repository should eventually hide
+the remaining complexity behind a broader setup script.
+
+The script should probably:
+
+- Detect the installed KiCad version.
+- Locate the user's KiCad configuration directory.
+- Register custom symbol and footprint libraries.
+- Avoid overwriting existing user configuration without a backup.
+- Be repeatable, so it can be run after cloning this repository on a new
+  machine.
 
 ## Project Philosophy
 
