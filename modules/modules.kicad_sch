@@ -1,0 +1,60 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2f0fd1e5-63d8-4ca4-bf4e-c5cd22bea193")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 16.51 16.51)
+		(size 95.25 78.74)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "2baf7866-281b-4c3e-9cc5-ca47afe12043")
+		(property "Sheetname" "usbc_power"
+			(at 16.51 15.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usbc_power.kicad_sch"
+			(at 16.51 95.8346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "modules"
+				(path "/2f0fd1e5-63d8-4ca4-bf4e-c5cd22bea193"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
