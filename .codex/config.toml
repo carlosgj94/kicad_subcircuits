@@ -1,0 +1,7 @@
+[mcp_servers.kicad]
+command = "node"
+args = ["/home/juar/Projects/kicad/KiCAD-MCP-Server/dist/index.js"]
+
+[mcp_servers.kicad.env]
+KICAD_PYTHON = "/home/juar/Projects/kicad/kicad_subcircuits/.venv/bin/python"
+PYTHONPATH = "/usr/lib/python3.14/site-packages"
